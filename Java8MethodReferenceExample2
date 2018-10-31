@@ -1,0 +1,23 @@
+/**
+ * 
+ * @author Liam
+ * @email liamletuan@gmail.com
+ *
+ */
+
+interface Sayable {
+	void say();
+}
+
+public class Java8MethodReferenceExample2 {
+
+	public static void ThreadStatus() {
+		System.out.println("Thread is running...");
+	}
+
+	public static void main(String[] args) {
+		Thread t2 = new Thread(Java8MethodReferenceExample2::ThreadStatus);
+		t2.start();
+	}
+
+}
